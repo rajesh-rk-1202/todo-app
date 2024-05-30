@@ -56,7 +56,7 @@ const ListItem = ({ todo, onDeleteTodo, onCompleteTodo, onStartEditTodo }) => {
           }}
         >
           <CustomTooltip
-            title={`Mark as ${todo.completed ? '' : 'not'} completed`}
+            title={`Mark as ${todo.completed ? 'not' : ''} completed`}
           >
             <IconButton aria-label="done" onClick={completeHandler}>
               {todo.completed ? <CloseIcon /> : <DoneIcon />}
